@@ -23,8 +23,8 @@ export default function App() {
   }
 
   return (
-    <main className="min-h-dvh bg-[#f3eee8]">
-      <div className="mx-auto flex h-dvh w-full max-w-2xl flex-col">
+    <main className="flex min-h-dvh justify-center bg-[#f3eee8]">
+      <div className="flex h-dvh w-full max-w-2xl flex-col">
         <ChatHistory messages={messages} />
         <MessageComposer
           role={role}
