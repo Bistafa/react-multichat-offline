@@ -13,7 +13,7 @@ export default function MessageBubble({ message }: MessageBubbleProps) {
             className={`flex ${isUser ? 'justify-end' : 'justify-start'}`}
         >
             <p
-                className={`max-w-[85%] break-words rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[75%] ${isUser
+                className={`max-w-[85%] break-words whitespace-pre-wrap rounded-2xl px-4 py-3 text-sm leading-relaxed sm:max-w-[75%] ${isUser
                         ? 'rounded-br-md bg-stone-800 text-white'
                         : 'rounded-bl-md border border-stone-200 bg-white text-stone-800'
                     }`}

@@ -73,7 +73,12 @@ export default function MessageComposer({
                     <label className="sr-only" htmlFor="message-text">
                         Mensagem
                     </label>
+                    <span className="sr-only" id="message-keyboard-help">
+                        Pressione Enter para enviar ou Shift+Enter para inserir
+                        uma nova linha.
+                    </span>
                     <textarea
+                        aria-describedby="message-keyboard-help"
                         autoComplete="off"
                         className="max-h-36 min-h-11 min-w-0 flex-1 resize-none overflow-y-auto rounded-lg border border-stone-300 bg-white px-3 py-2.5 text-base leading-6 text-stone-900 outline-none placeholder:text-stone-500 focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-1"
                         id="message-text"
