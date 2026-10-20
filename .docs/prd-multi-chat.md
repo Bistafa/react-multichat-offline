@@ -263,11 +263,11 @@ As tarefas abaixo devem ser executadas na ordem indicada. Cada etapa deve deixar
 
 - [x] Executar `npm run lint`.
 - [x] Executar `npm run build`.
-- Verificar manualmente o fluxo de mensagem inicial, envio como usuario, alternancia para robo e envio como robo.
-- Recarregar a pagina e confirmar que o historico nao foi persistido.
-- Validar a experiencia em viewport mobile e desktop.
+- [x] Verificar manualmente o fluxo de mensagem inicial, envio como usuario, alternancia para robo e envio como robo.
+- [x] Recarregar a pagina e confirmar que o historico nao foi persistido.
+- [x] Validar a experiencia em viewport mobile e desktop.
 
-**Resultado:** o MVP atende aos criterios de aceite e esta pronto para entrega.
+**[x] Resultado:** o MVP atende aos criterios de aceite e esta pronto para entrega.
 
 ## 11. Riscos e decisoes
 
