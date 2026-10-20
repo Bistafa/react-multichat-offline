@@ -261,8 +261,8 @@ As tarefas abaixo devem ser executadas na ordem indicada. Cada etapa deve deixar
 
 ### Tarefa 9: Validar o comportamento completo
 
-- Executar `npm run lint`.
-- Executar `npm run build`.
+- [x] Executar `npm run lint`.
+- [x] Executar `npm run build`.
 - Verificar manualmente o fluxo de mensagem inicial, envio como usuario, alternancia para robo e envio como robo.
 - Recarregar a pagina e confirmar que o historico nao foi persistido.
 - Validar a experiencia em viewport mobile e desktop.
