@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ChatHistory from './components/ChatHistory'
 import MessageComposer from './components/MessageComposer'
+import Sidebar from './components/Sidebar'
 import type { ChatMessage, MessageRole } from './types/chat'
 
 const initialMessages: ChatMessage[] = [
@@ -23,15 +24,18 @@ export default function App() {
   }
 
   return (
-    <main className="flex min-h-dvh justify-center bg-[#f3eee8]">
-      <div className="flex h-dvh w-full max-w-2xl flex-col">
-        <ChatHistory messages={messages} />
-        <MessageComposer
-          role={role}
-          onRoleChange={setRole}
-          onSend={handleSend}
-        />
-      </div>
+    <main className="flex min-h-dvh bg-[#f3eee8]">
+      <Sidebar />
+      <section className="flex min-w-0 flex-1 justify-center">
+        <div className="flex h-dvh w-full max-w-2xl flex-col">
+          <ChatHistory messages={messages} />
+          <MessageComposer
+            role={role}
+            onRoleChange={setRole}
+            onSend={handleSend}
+          />
+        </div>
+      </section>
     </main>
   )
 }
