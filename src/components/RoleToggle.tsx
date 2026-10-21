@@ -3,9 +3,14 @@ import type { MessageRole } from '../types/chat'
 type RoleToggleProps = {
     role: MessageRole
     onRoleChange: (role: MessageRole) => void
+    disabled: boolean
 }
 
-export default function RoleToggle({ role, onRoleChange }: RoleToggleProps) {
+export default function RoleToggle({
+    role,
+    onRoleChange,
+    disabled,
+}: RoleToggleProps) {
     const isBot = role === 'bot'
 
     function toggleRole() {
@@ -17,6 +22,7 @@ export default function RoleToggle({ role, onRoleChange }: RoleToggleProps) {
             aria-label={`Remetente da próxima mensagem: ${isBot ? 'robô' : 'usuário'}. Alternar para ${isBot ? 'usuário' : 'robô'}`}
             aria-pressed={isBot}
             className="inline-flex min-h-11 items-center gap-3 rounded-lg text-left outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2"
+            disabled={disabled}
             onClick={toggleRole}
             title={`Alternar para ${isBot ? 'usuário' : 'robô'}`}
             type="button"
